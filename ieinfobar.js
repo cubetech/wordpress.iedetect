@@ -136,15 +136,15 @@ function displayNotification()
     
     var mainMessage = new Array();
     mainMessage["de"] = 'Installieren Sie jetzt den kostenlosen <a href="http://www.mozilla.com" target="_blank"><strong>Mozilla Firefox</strong></a> oder den <a href="http://go.microsoft.com/?linkid=9742840" target="_blank">Internet Explorer&nbsp;9</a>! Mit einem modernen Browser wird das Internet schneller, einfacher und ansprechender.';
-    mainMessage["en"] = '';
+    mainMessage["en"] = 'Install now the free <a href="http://www.mozilla.com" target="_blank"><strong>Mozilla Firefox</strong></a> or the <a href="http://go.microsoft.com/?linkid=9742840" target="_blank">Internet&nbsp;Explorer&nbsp;9</a>! With a modern browser the internet becomes more speed and it\'s simpler and better for using.';
     
     var warnMessage = new Array();
     warnMessage["de"] = '<font color="red"><strong>Warnung:</strong></font> Mit Ihrer alten Version vom Internet Explorer gehen Sie unn&ouml;tige Risiken ein!';
-    warnMessage["en"] = 'bla';
+    warnMessage["en"] = '<font color="red"><strong>Warning:</strong></font> With your old version of the Internet Explorer you are taking unnecessary risks!';
     
     var additionalMessage = new Array();
     additionalMessage["de"] = '<i>Gerne helfen wir Ihnen dabei! <a href="/support">Weitere Infos zum Support...</a></i>';
-    additionalMessage["en"] = 'Please let us help';
+    additionalMessage["en"] = '<i>Please let us help! <a href="/en/support">Ask our support...</a></i>';
     
     if(thislang.search('de') > -1)
     {
@@ -167,10 +167,7 @@ function displayNotification()
 		{
 			if (!isXP)
 			{
-                if(thislang.search('de') > -1)
-                {
-				    var notificationBar = new ieInfoBar({message: shortMessage, icon: iedetect.url + '/alert.gif'});
-                }
+			    var notificationBar = new ieInfoBar({message: shortMessage, icon: iedetect.url + '/alert.gif'});
 				notificationBar.show(50);
 				createDocumentCookie('notificationdisplayed', 'true', 3 * 24);		
 			}
@@ -181,19 +178,13 @@ function displayNotification()
 
 			if (!isXP)
 			{
-                if(thislang.search('de') > -1)
-                {
-				    var notificationBar = new ieInfoBar({message: longMessage, icon: iedetect.url + '/alert.gif'});
-                }
+			    var notificationBar = new ieInfoBar({message: longMessage, icon: iedetect.url + '/alert.gif'});
 				notificationBar.show(50);
 				createDocumentCookie('notificationdisplayed', 'true', 6);
 			}
 			else
 			{
-                if(thislang.search('de') > -1)
-                {
-                    var notificationBar = new ieInfoBar({message: longMessage, icon: iedetect.url + '/alert.gif'});
-                }
+                var notificationBar = new ieInfoBar({message: longMessage, icon: iedetect.url + '/alert.gif'});
 				notificationBar.show(50);
 				createDocumentCookie('notificationdisplayed', 'true', 6);
 			}
