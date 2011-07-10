@@ -1,13 +1,12 @@
-=== Plugin Name ===
-Contributors: cubetech.ch, chrigu99
-Tags: IE6, IE7, IE8, browser, detect, detection, internet explorer, warning, message, java script, plugin
-Requires at least: 3.0
+=== iedetect ===
+Contributors: chrigu99, cubetech
+Donate link: http://www.cubetech.ch
+Tags: IE6, IE7, IE8, browser, detect, detection, internet explorer, warning, message, java script, plugin, wordpress, cubetech, webdesign, hosting, billing, widget, plugin, sidebar
+Requires at least: 2.8
 Tested up to: 3.2
-Stable tag: 1.0
+Stable tag: 1.0.0
 
-
-Erkennt den IE6, IE7 und IE8 und empfiehlt dem User, einen aktuelleren Browser zu installieren.
-
+iedetect detects the Internet Explorer and show a warning message if it's an old version.
 
 == Description ==
 
@@ -17,6 +16,9 @@ If the plugin detects one of these browsers, the visitor see a message bar in th
 Das Plugin erkennt den Internet Explorer 6, 7 und 8.
 Wenn einer dieser Browser erkannt wird, wird mit einer Message-Bar oben in der Webseite darauf hingewiesen, dass der Besucher eine veraltete Version des Internet Explorers verwendet und diese Gefahren birgt. Es wird ihm empfohlen, den Mozilla Firefox oder den Internet Explorer 9 zu installieren.
 
+Wenn Du einen Fehler entdeckst oder eine Idee für ein Feature hast, kannst Du diesen hier melden oder gleich selber mithelfen: https://github.com/cubetech/wordpress.iedetect
+
+If you see a fault or if you have a great idea for our piece of code, let us know here or help us coding: https://github.com/cubetech/wordpress.iedetect
 
 == Installation ==
 
@@ -25,9 +27,34 @@ This section describes how to install the plugin and get it working.
 1. Upload `iedetect` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
+== Screenshots ==
 
-Hier wird beschrieben, wie das Plugin installiert werden muss.
+1. Adding the widget
+2. A productive example of the plugin
+3. Settings page
 
-1. Den Ordner `iedetect` in das Verzeichnis `/wp-content/plugins/` hochladen
-1. Das Plugin im 'Plugins' Menu von WordPress aktivieren
+== Frequently Asked Questions ==
 
+= How can i activate the function of the plugin? =
+Install the plugin and activate it in the administration panel of WordPress.
+
+= How can i change the message? =
+If you are similar with JS, then you do this in the ieinfobar.js. If not - stay tuned. Future versions may come with an admin panel for administrating the plugin.
+
+= Are there more FAQ? =
+Not yet, no. But feel free to contact us if you have a question! info@cubetech.ch
+
+== Changelog ==
+
+= 1.0.0 =
+* First stable version
+* Publish the plugin
+
+== About us ==
+
+cubetech.ch is a modern, swiss-based web-maintainer which provides high quality IT services for you.
+Our contact address: info@cubetech.ch
+Website: http://www.cubetech.ch
+Twitter: http://twitter.com/cubetech_ch
+Facebook: http://www.facebook.com/cubetech
+Github: https://github.com/cubetech
