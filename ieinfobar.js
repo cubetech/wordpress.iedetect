@@ -82,6 +82,20 @@ function getIeVersion()
 }
 
 
+function getLanguage()
+{
+    var l_lang;
+    if (navigator.userLanguage)
+        l_lang = navigator.userLanguage;
+    else if (navigator.language)
+        l_lang = navigator.language;
+    else
+        l_lang = "en";
+
+    return l_lang;
+
+}
+
 function displayNotification() 
 {
 	
@@ -118,7 +132,29 @@ function displayNotification()
 					   || u.indexOf("WM5 PIE") > -1
 					 ); 
 	var isIE = (ieVersion && !isIEMobile)
-
+    var thislang = getLanguage();
+    
+    var mainMessage = new Array();
+    mainMessage["de"] = 'Installieren Sie jetzt den kostenlosen <a href="http://www.mozilla.com" target="_blank"><strong>Mozilla Firefox</strong></a> oder den <a href="http://go.microsoft.com/?linkid=9742840" target="_blank">Internet Explorer&nbsp;9</a>! Mit einem modernen Browser wird das Internet schneller, einfacher und ansprechender.';
+    mainMessage["en"] = '';
+    
+    var warnMessage = new Array();
+    warnMessage["de"] = '<font color="red"><strong>Warnung:</strong></font> Mit Ihrer alten Version vom Internet Explorer gehen Sie unn&ouml;tige Risiken ein!';
+    warnMessage["en"] = 'bla';
+    
+    var additionalMessage = new Array();
+    additionalMessage["de"] = '<i>Gerne helfen wir Ihnen dabei! <a href="/support">Weitere Infos zum Support...</a></i>';
+    additionalMessage["en"] = 'Please let us help';
+    
+    if(thislang.search('de') > -1)
+    {
+        var shortMessage = mainMessage["de"] + ' ' + additionalMessage["de"];
+        var longMessage = warnMessage["de"] + ' ' + mainMessage["de"] + ' ' + additionalMessage["de"];
+    } else {
+        var shortMessage = mainMessage["en"] + ' ' + additionalMessage["en"];
+        var longMessage = warnMessage["en"] + ' ' + mainMessage["en"] + ' ' + additionalMessage["en"];
+    }
+        
 	if (!isIE)
 	{	
 		return;
@@ -131,7 +167,10 @@ function displayNotification()
 		{
 			if (!isXP)
 			{
-				var notificationBar = new ieInfoBar({message: 'Installieren Sie jetzt den kostenlosen <a href="http://www.mozilla.com" target="_blank"><strong>Mozilla Firefox</strong></a> oder den <a href="http://go.microsoft.com/?linkid=9742840" target="_blank">Internet Explorer&nbsp;9</a>! Mit einem modernen Browser wird das Internet schneller, einfacher und ansprechender. <i>Gerne helfen wir Ihnen dabei! <a href="/support">Weitere Infos zum Support...</a></i>', icon: iedetect.url + '/alert.gif'});
+                if(thislang.search('de') > -1)
+                {
+				    var notificationBar = new ieInfoBar({message: shortMessage, icon: iedetect.url + '/alert.gif'});
+                }
 				notificationBar.show(50);
 				createDocumentCookie('notificationdisplayed', 'true', 3 * 24);		
 			}
@@ -142,13 +181,19 @@ function displayNotification()
 
 			if (!isXP)
 			{
-				var notificationBar = new ieInfoBar({message: '<font color="red"><strong>Warnung:</strong></font> Mit Ihrer alten Version vom Internet Explorer gehen Sie unn&ouml;tige Risiken ein! Installieren Sie jetzt den kostenlosen <a href="http://www.mozilla.com" target="_blank"><strong>Mozilla Firefox</strong></a> oder den <a href="http://go.microsoft.com/?linkid=9742840" target="_blank">Internet Explorer&nbsp;9</a>! Mit einem modernen Browser wird das Internet schneller, einfacher und ansprechender. <i>Gerne helfen wir Ihnen dabei! <a href="/support">Weitere Infos zum Support...</a></i>', icon: iedetect.url + '/alert.gif'});
+                if(thislang.search('de') > -1)
+                {
+				    var notificationBar = new ieInfoBar({message: longMessage, icon: iedetect.url + '/alert.gif'});
+                }
 				notificationBar.show(50);
 				createDocumentCookie('notificationdisplayed', 'true', 6);
 			}
 			else
 			{
-				var notificationBar = new ieInfoBar({message: '<font color="red"><strong>Warnung:</strong></font> Mit Ihrer alten Version vom Internet Explorer gehen Sie unn&ouml;tige Risiken ein! Installieren Sie jetzt den kostenlosen <a href="http://www.mozilla.com" target="_blank"><strong>Mozilla Firefox</strong></a> oder den <a href="http://go.microsoft.com/?linkid=9742840" target="_blank">Internet Explorer&nbsp;9</a>! Mit einem modernen Browser wird das Internet schneller, einfacher und ansprechender. <i>Gerne helfen wir Ihnen dabei! <a href="/support">Weitere Infos zum Support...</a></i>', icon: iedetect.url + '/alert.gif'});
+                if(thislang.search('de') > -1)
+                {
+                    var notificationBar = new ieInfoBar({message: longMessage, icon: iedetect.url + '/alert.gif'});
+                }
 				notificationBar.show(50);
 				createDocumentCookie('notificationdisplayed', 'true', 6);
 			}
@@ -172,7 +217,7 @@ function createDocumentCookie(name, value, hours)
 	{
 		var expires = '';
 	}
-	document.cookie = name + '=' + value + expires + '; path=/';
+//	document.cookie = name + '=' + value + expires + '; path=/';
 	
 }
 
