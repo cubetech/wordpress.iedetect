@@ -45,6 +45,9 @@ Not yet, no. But feel free to contact us if you have a question! info@cubetech.c
 
 == Changelog ==
 
+= 1.0.1 =
+* Added screenshots
+
 = 1.0.0 =
 * First stable version
 * Publish the plugin
