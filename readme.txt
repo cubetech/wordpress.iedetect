@@ -10,11 +10,15 @@ iedetect detects the Internet Explorer and show a warning message if it's an old
 
 == Description ==
 
+= English =
+
 This plugin detects the Internet Explorer 6, 7 and 8.
 If the plugin detects one of these browsers, the visitor see a message bar in the top of your message. it says, that he is using an old version of Internet explorer and this is dangerous. And it says, that it is recommended, to install Mozilla Firefox or Internet Explorer 9.
 After the visitor has seen the message, it disappears for 6 hours for IE6 and IE7 and for 3 days for IE8 (cookie based).
 
 If you see a fault or if you have a great idea for our piece of code, let us know here or help us coding: https://github.com/cubetech/wordpress.iedetect
+
+= German =
 
 Das Plugin erkennt den Internet Explorer 6, 7 und 8.
 Wenn einer dieser Browser erkannt wird, wird mit einer Message-Bar oben in der Webseite darauf hingewiesen, dass der Besucher eine veraltete Version des Internet Explorers verwendet und diese Gefahren birgt. Es wird ihm empfohlen, den Mozilla Firefox oder den Internet Explorer 9 zu installieren.
