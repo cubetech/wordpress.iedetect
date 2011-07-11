@@ -75,7 +75,6 @@ function getIeVersion()
 	{
 		ieVersion = 6;
 	}
-	ieVersion = 6;
 
 	return ieVersion;
 	
@@ -143,8 +142,8 @@ function displayNotification()
     warnMessage["en"] = '<font color="red"><strong>Warning:</strong></font> With your old version of the Internet Explorer you are taking unnecessary risks!';
     
     var additionalMessage = new Array();
-    additionalMessage["de"] = '<i>Gerne helfen wir Ihnen dabei! <a href="/support">Weitere Infos zum Support...</a></i>';
-    additionalMessage["en"] = '<i>Please let us help! <a href="/en/support">Ask our support...</a></i>';
+    additionalMessage["de"] = '';
+    additionalMessage["en"] = '';
     
     if(thislang.search('de') > -1)
     {
