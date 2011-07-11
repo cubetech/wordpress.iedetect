@@ -4,7 +4,7 @@ Donate link: http://www.cubetech.ch
 Tags: IE6, IE7, IE8, browser, detect, detection, internet explorer, warning, message, java script, plugin, wordpress, cubetech, webdesign, hosting, billing, widget, plugin, sidebar
 Requires at least: 2.8
 Tested up to: 3.2
-Stable tag: 1.0.1
+Stable tag: 1.0.0
 
 iedetect detects the Internet Explorer and show a warning message if it's an old version.
 
@@ -12,13 +12,15 @@ iedetect detects the Internet Explorer and show a warning message if it's an old
 
 This plugin detects the Internet Explorer 6, 7 and 8.
 If the plugin detects one of these browsers, the visitor see a message bar in the top of your message. it says, that he is using an old version of Internet explorer and this is dangerous. And it says, that it is recommended, to install Mozilla Firefox or Internet Explorer 9.
+After the visitor has seen the message, it disappears for 6 hours for IE6 and IE7 and for 3 days for IE8 (cookie based).
+
+If you see a fault or if you have a great idea for our piece of code, let us know here or help us coding: https://github.com/cubetech/wordpress.iedetect
 
 Das Plugin erkennt den Internet Explorer 6, 7 und 8.
 Wenn einer dieser Browser erkannt wird, wird mit einer Message-Bar oben in der Webseite darauf hingewiesen, dass der Besucher eine veraltete Version des Internet Explorers verwendet und diese Gefahren birgt. Es wird ihm empfohlen, den Mozilla Firefox oder den Internet Explorer 9 zu installieren.
+Nachdem der Benutzer die Nachricht gesehen hat, wird diese auf Basis von Cookies für sechs Stunden (IE6, IE7) oder für drei Tage (IE8) ausgeblendet.
 
 Wenn Du einen Fehler entdeckst oder eine Idee für ein Feature hast, kannst Du diesen hier melden oder gleich selber mithelfen: https://github.com/cubetech/wordpress.iedetect
-
-If you see a fault or if you have a great idea for our piece of code, let us know here or help us coding: https://github.com/cubetech/wordpress.iedetect
 
 == Installation ==
 
@@ -45,10 +47,8 @@ Not yet, no. But feel free to contact us if you have a question! info@cubetech.c
 
 == Changelog ==
 
-= 1.0.1 =
-* Added screenshots
-
 = 1.0.0 =
+* Added screenshots
 * First stable version
 * Publish the plugin
 
