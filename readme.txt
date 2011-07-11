@@ -29,9 +29,8 @@ This section describes how to install the plugin and get it working.
 
 == Screenshots ==
 
-1. Adding the widget
-2. A productive example of the plugin
-3. Settings page
+1. Screenshot of the message showed to users with a german browser
+2. Screenshot of the message showed to users with all other localized browsers
 
 == Frequently Asked Questions ==
 
