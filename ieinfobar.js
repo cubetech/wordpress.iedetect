@@ -134,8 +134,8 @@ function displayNotification()
     var thislang = getLanguage();
     
     var mainMessage = new Array();
-    mainMessage["de"] = 'Installieren Sie jetzt den kostenlosen <a href="http://www.mozilla.com" target="_blank"><strong>Mozilla Firefox</strong></a> oder den <a href="http://go.microsoft.com/?linkid=9742840" target="_blank">Internet Explorer&nbsp;9</a>! Mit einem modernen Browser wird das Internet schneller, einfacher und ansprechender.';
-    mainMessage["en"] = 'Install now the free <a href="http://www.mozilla.com" target="_blank"><strong>Mozilla Firefox</strong></a> or the <a href="http://go.microsoft.com/?linkid=9742840" target="_blank">Internet&nbsp;Explorer&nbsp;9</a>! With a modern browser the internet becomes more speed and it\'s simpler and better for using.';
+    mainMessage["de"] = 'Installieren Sie jetzt den kostenlosen <a href="http://www.google.com/chrome" target="_blank" title="Google Chrome - Der schnelle, kostenlose Browser"><strong>Google Chrome</strong></a> oder den <a href="http://go.microsoft.com/?linkid=9742840" target="_blank">Internet Explorer&nbsp;10</a>! Mit einem modernen Browser wird das Internet schneller, einfacher und ansprechender.';
+    mainMessage["en"] = 'Install now the free <a href="http://www.google.com/chrome" target="_blank" title="Google Chrome - The fast, free browser"><strong>Google Chrome</strong></a> or the <a href="http://go.microsoft.com/?linkid=9742840" target="_blank">Internet&nbsp;Explorer&nbsp;10</a>! With a modern browser the internet becomes more speed and it\'s simpler and better for using.';
     
     var warnMessage = new Array();
     warnMessage["de"] = '<font color="red"><strong>Warnung:</strong></font> Mit Ihrer alten Version vom Internet Explorer gehen Sie unn&ouml;tige Risiken ein!';
