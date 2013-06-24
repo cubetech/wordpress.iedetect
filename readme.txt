@@ -4,7 +4,7 @@ Donate link: http://www.cubetech.ch
 Tags: IE6, IE7, IE8, browser, detect, detection, internet explorer, warning, message, java script, plugin, wordpress, cubetech, webdesign, hosting, billing, widget, plugin, sidebar
 Requires at least: 2.8
 Tested up to: 3.5
-Stable tag: 1.1
+Stable tag: 1.1.1
 
 iedetect detects the Internet Explorer and show a warning message if it's an old version.
 
@@ -50,6 +50,9 @@ If you are similar with JS, then you do this in the ieinfobar.js. If not - stay 
 Not yet, no. But feel free to contact us if you have a question! info@cubetech.ch
 
 == Changelog ==
+
+= 1.1.1 =
+* New version number
 
 = 1.1 =
 * Replaced Firefox by Google Chrome
